@@ -1,0 +1,75 @@
+/*Plano de fundo*/
+body #fundo{
+    position: fixed;
+    z-index: -1;
+}
+/*Logo*/
+header {
+    display: flex;
+    margin: 40px 230px;
+}
+/*Conteudo principal*/
+main .container{
+    margin-left: 200px;
+    display: grid;
+    grid-template-areas: "mockups enter-community";
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1920px;
+}
+/*mockups*/
+.mockups{
+    grid-area: mockups;
+    margin: 40px 30px;
+}
+/*enter-community*/
+.enter-community{
+    grid-area: enter-community;
+    max-width: 440px;
+    margin-top: 100px;
+    
+}
+.enter-community h1{
+    color: #fff;
+    line-height: 55px;
+}
+.enter-community p{
+    color:#fff;
+    line-height: 25px;
+    padding: 20px 0;
+}
+.enter-community a{
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px 60px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.enter-community a:hover{
+    background-color: #fd7fd7;
+    color: black;
+    border: solid 1px #fff;
+    transition: 0.3s; 
+}
+/*Rodape*/
+footer{
+    display: flex;
+    justify-content: right;
+    margin-right: 430px;
+    font-size: 20px;
+    gap: 15px;
+}
+footer a{
+    display: inline-block;
+    padding: 15px 15px;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 50%;
+}
+footer a:hover{
+    background-color: #fd7fd7;
+    color: black;
+    border: none;
+    transition: 0.3s;
+}
